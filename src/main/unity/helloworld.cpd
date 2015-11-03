@@ -1,0 +1,11 @@
+name: HelloWorld App
+
+environment: 'HelloWorld App for Linux v 1.0.0.0_Production_1'
+path: E:/Programming/projects/pet-clinic/unity-samples-helloworld/target/helloworld-customization-project.zip
+
+build:
+    mapping:
+        - source: target/unity-helloworld-1.0.0-SNAPSHOT.war
+          target: war/helloworld.war
+        - source: src/main/resources/init.sql
+          target: sql/helloworld.sql
