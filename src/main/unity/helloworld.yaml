@@ -2,7 +2,7 @@
 name: $user.namespace - HelloWorld Sample App
 
 # Path to the customization project archive
-path: target/helloworld-customization-project.zip
+archive: target/helloworld-customization-project.zip
 
 # Build section
 build:
