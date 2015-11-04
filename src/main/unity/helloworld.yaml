@@ -1,0 +1,22 @@
+# Name of the customization project
+name: $user.namespace - HelloWorld Sample App
+
+# Path to the customization project archive
+path: target/helloworld-customization-project.zip
+
+# Build section
+build:
+  # Customization project folder mapping section
+  mapping:
+    - source: target/unity-helloworld-1.0.0-SNAPSHOT.war
+      target: war/helloworld.war
+    - source: src/main/resources/init.sql
+      target: sql/helloworld.sql
+
+# Reference on application template by its key
+template_key: DEF1.2.0.0SYS
+
+# Optional. The environment's name where customization project will be deployed.
+# It may also be overriden in 'project-customization deploy' command througth the specia parameter --e (--environment).
+#environment:
+

@@ -8,6 +8,10 @@
 	<name>hello-world</name>
 	<packaging>war</packaging>
 
+	<properties>
+		<additionalDeployProperties></additionalDeployProperties>
+	</properties>
+
 	<dependencies>
 		<dependency>
 			<groupId>javax.servlet</groupId>
@@ -36,7 +40,9 @@
 							<goal>exec</goal>
 						</goals>
 						<configuration>
-							<commandlineArgs>"project-customization build --d 'src/main/unity/helloworld.cpd'"</commandlineArgs>
+							<arguments>
+								<argument>project-customization build --d 'src/main/unity/helloworld.yaml'</argument>
+							</arguments>
 						</configuration>
 					</execution>
 					<execution>
@@ -46,7 +52,9 @@
 							<goal>exec</goal>
 						</goals>
 						<configuration>
-							<commandlineArgs>"project-customization publish --d 'src/main/unity/helloworld.cpd'"</commandlineArgs>
+							<arguments>
+								<argument>project-customization publish --d 'src/main/unity/helloworld.yaml'</argument>
+							</arguments>
 						</configuration>
 					</execution>
 					<execution>
@@ -56,7 +64,9 @@
 							<goal>exec</goal>
 						</goals>
 						<configuration>
-							<commandlineArgs>"project-customization deploy --d 'src/main/unity/helloworld.cpd'"</commandlineArgs>
+							<arguments>
+								<argument>project-customization deploy --d 'src/main/unity/helloworld.yaml' ${additionalDeployProperties}</argument>
+							</arguments>
 						</configuration>
 					</execution>
 				</executions>
