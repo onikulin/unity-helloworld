@@ -1,8 +1,5 @@
-# Name of the customization project
-name: $user.namespace - HelloWorld Sample App
-
-# Path to the customization project archive
-archive: target/helloworld-customization-project.zip
+# Reference on application template by its key
+template_key: HAFL1.0.0.0SYS
 
 # Build section
 build:
@@ -13,10 +10,12 @@ build:
     - source: src/main/resources/init.sql
       target: sql/helloworld.sql
 
-# Reference on application template by its key
-template_key: DEF1.2.0.0SYS
+# Name of the customization project
+name: $user.namespace - HelloWorld Sample App
+
+# Path to the customization project archive
+archive: target/helloworld-customization-project.zip
 
 # Optional. The environment's name where customization project will be deployed.
 # It may also be overriden in 'project-customization deploy' command througth the specia parameter --e (--environment).
 #environment:
-

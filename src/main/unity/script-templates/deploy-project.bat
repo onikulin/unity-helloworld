@@ -1,0 +1,1 @@
+project-customization deploy --desc 'src/main/unity/helloworld.yaml' --env '%REMOTE_ENVIRONMENT_NAME%'

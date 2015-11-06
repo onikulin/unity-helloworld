@@ -42,7 +42,7 @@ public class WelcomeServlet extends HttpServlet {
         response.getWriter().write(
                 "<html>\n" +
                 "<body>\n" +
-                "<h2>" + responseString + "!</h2>\n" +
+                "<h2>" + responseString + "</h2>\n" +
                 "</body>\n" +
                 "</html>");
     }

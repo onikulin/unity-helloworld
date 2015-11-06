@@ -1,0 +1,1 @@
+sync-folder -remoteHost %REMOTE_TOMCAT_NAME% -remoteUser %REMOTE_TOMCAT_USER% -sourceFolder "/cygdrive/%WAR_EXPLODED_LOCAL_FOLDER%/" -targetFolder "%WAR_EXPLODED_REMOTE_FOLDER%" [-syncInterval %SYNC_TIMEOUT%]

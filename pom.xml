@@ -41,8 +41,9 @@
 						</goals>
 						<configuration>
 							<arguments>
-								<argument>project-customization build --d 'src/main/unity/helloworld.yaml'</argument>
+								<argument>project-customization build --desc 'src/main/unity/helloworld.yaml'</argument>
 							</arguments>
+							<executable>unity</executable>
 						</configuration>
 					</execution>
 					<execution>
@@ -53,8 +54,9 @@
 						</goals>
 						<configuration>
 							<arguments>
-								<argument>project-customization publish --d 'src/main/unity/helloworld.yaml'</argument>
+								<argument>project-customization publish --desc 'src/main/unity/helloworld.yaml'</argument>
 							</arguments>
+							<executable>unity</executable>
 						</configuration>
 					</execution>
 					<execution>
@@ -65,14 +67,12 @@
 						</goals>
 						<configuration>
 							<arguments>
-								<argument>project-customization deploy --d 'src/main/unity/helloworld.yaml' ${additionalDeployProperties}</argument>
+								<argument>project-customization deploy --desc 'src/main/unity/helloworld.yaml' ${additionalDeployProperties}</argument>
 							</arguments>
+							<executable>unity</executable>
 						</configuration>
 					</execution>
 				</executions>
-				<configuration>
-					<executable>unity</executable>
-				</configuration>
 			</plugin>
 		</plugins>
 
