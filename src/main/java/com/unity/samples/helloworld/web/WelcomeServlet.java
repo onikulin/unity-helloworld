@@ -43,6 +43,7 @@ public class WelcomeServlet extends HttpServlet {
                 "<html>\n" +
                 "<body>\n" +
                 "<h2>" + responseString + "</h2>\n" +
+                "<a href='/'>home page</a> | <strong>welcome page</strong>\n" +
                 "</body>\n" +
                 "</html>");
     }
