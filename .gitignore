@@ -1,0 +1,16 @@
+.settings
+.classpath
+.project
+.metadata
+.mymetadata
+.springBeans
+.externalToolBuilders
+.idea
+.architect
+*.iml
+*.ipr
+*.iws
+nbproject
+target
+logs
+bin
