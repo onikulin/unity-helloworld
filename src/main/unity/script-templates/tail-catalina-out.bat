@@ -1,0 +1,1 @@
+ssh -t %REMOTE_TOMCAT_USER@%REMOTE_TOMCAT_HOST tail -f /opt/tomcat/logs/catalina.out

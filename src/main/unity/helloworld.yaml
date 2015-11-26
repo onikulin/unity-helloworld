@@ -17,5 +17,5 @@ name: $user.namespace - HelloWorld Sample App
 archive: target/helloworld-customization-project.zip
 
 # Optional. The environment's name where customization project will be deployed.
-# It may also be overriden in 'project-customization deploy' command througth the specia parameter --e (--environment).
-#environment:
+# It may also be overridden in 'project-customization deploy' command through the specia parameter --e (--environment).
+# environment:
