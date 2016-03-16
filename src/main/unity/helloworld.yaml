@@ -10,11 +10,11 @@ build:
     - source: src/main/resources/init.sql
       target: sql/helloworld.sql
 
-# Name of the customization project
-name: $user.namespace - HelloWorld Sample App
-
 # Path to the customization project archive
 archive: target/helloworld-customization-project.zip
+
+# Name of the customization project
+name: $user.namespace - HelloWorld Sample App
 
 # Optional. The environment's name where customization project will be deployed.
 # It may also be overridden in 'project-customization deploy' command through the specia parameter --e (--environment).
