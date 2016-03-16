@@ -1,5 +1,5 @@
 # Reference on application template by its key
-template_key: HAFL1.0.0.0SYS
+template_key: HAFL0.7.0.0SYS
 
 # Build section
 build:
